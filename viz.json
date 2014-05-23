@@ -1,11 +1,20 @@
 {
-  "results": [
-    {"name": "Locke", "value": 4},
-    {"name": "Reyes", "value": 8},
-    {"name": "Ford", "value": 15},
-    {"name": "Jarrah", "value": 16},
-    {"name": "Shepard", "value": 23},
-    {"name": "Kwon", "value": 42}
+  "name": "vis",
+  "children": [
+    {
+    "name": "bright spots",
+    "children": [
+      { "name": "Dev Team",
+        "children": [
+          {"name": "So cool", "size": 400},
+          {"name": "Such awesome", "size": 100},
+          {"name": "Nice", "size": 50}
+        ]
+    },
+      {"name": "Designers", "size": 9000},
+      {"name": "Product", "size": 652},
+      {"name": "Biz Dev", "size": 636}
+    ]
+  }
   ]
 }
-
