@@ -7,7 +7,16 @@
   stroke-width: 1.5px;
 }
 
+.node--top {
+  /* display: none; */
+}
+
+.node--middle {
+  display: none;
+}
+
 .node--leaf {
+  display: none;
   fill: white;
 }
 
