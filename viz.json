@@ -1,20 +1,313 @@
 {
-  "name": "vis",
+  "name": "flare",
   "children": [
     {
-    "name": "bright spots",
+    "name": "strike forces",
     "children": [
-      { "name": "Dev Team",
+      { "name": "early on",
         "children": [
-          {"name": "So cool", "size": 400},
-          {"name": "Such awesome", "size": 100},
-          {"name": "Nice", "size": 50}
+          {"name": "less formality (no document), we winged it, lots of collaboration between teams", "size": 100},
+          {"name": "very much winged it, we were agile with a little 'a'", "size": 100},
+          {"name": "There was little precedent and documentation for how a strike-force should go, which made people communicate more.  Devs and Design/UX would check in daily with eachother.", "size": 100}
         ]
     },
-      {"name": "Designers", "size": 9000},
-      {"name": "Product", "size": 652},
-      {"name": "Biz Dev", "size": 636}
+    { "name": "Provide clearly defined pieces of work, where you can measure the effect you're having", "size": 100},
+    { "name": "The ability to get rid of something as fundamental as the IPM and replace it with our own process was impressive", "size": 100},
+    { "name": "design and UX were largely dedicated to the track and didn't have to multi-task, making them very accessible and improving workflow.", "size": 100}
     ]
+  },
+  {
+    "name": "Vampire Masquerading Track",
+    "children": [
+      { "name": "no expert",
+        "children": [
+          {"name": "No one came into the strikeforce thinking they knew how to solve the problem, because we hadn't been through it before.", "size": 100},
+          {"name": "No precedent and no one expert, everyone worked together.", "size": 100}
+        ]
+      },
+    { "name": "Very clear requirements", "size": 100},
+    { "name": "The right people got on the same page right away", "size": 100},
+    { "name": "Kellen was a 'pure customer'.  He knew that problem that he had, without any prior knowledge of how to fix it.  Allowed the people in the room to solve it.", "size": 100}
+    ]
+  },
+    {
+    "name": "Events Track",
+    "children": [
+      {"name": "Product did a great job of looking at a larger broken experience and prioritizing the highest impact things we would change", "size": 100},
+      {"name": "No precedent and no one expert, everyone worked together. The scope of work that was laid out for it was optimal and very thoroughly outlined.", "size": 100}
+        ]
+    },
+ {
+    "name": "Launch",
+    "children": [
+      { "name": "Clarity",
+        "children": [
+          {"name": "We really came together at the 25th hour. Everyone came together to solve problems, with a 'let's get it done' attitude", "size": 100},
+          {"name": "Everyone agreed on the problem (launching). The goal was clear.", "size": 100},
+          {"name": "There was complete focus and a shared mission", "size": 100},
+          {"name": "People were more united in working towards a common goal", "size": 100},
+          {"name": "Clear deadline, everyone was working towards a clear goal", "size": 100},
+          {"name": "We knew we were delivering the most important thing possible to them at that moment.", "size": 100},
+          {"name": "Shared, understood common purpose.", "size": 100}
+        ]
+      },
+        { "name": "Deadline",
+        "children": [
+          {"name": "The pressure of 'we needed to deliver' was a good motivator", "size": 100},
+          {"name": "The deadline established a clear goal which directed prioritization and gave us something to rally around.", "size": 100},
+          {"name": "We were quicker, but not necessarily better.", "size": 100},
+          {"name": "Launched when we said we would", "size": 100}
+        ]
+      },
+      { "name": "Speed",
+        "children": [
+          {"name": "Despite some of the negative feedback post-launch, we accomplished a whole lot in a short amount of time", "size": 100},
+          {"name": "We were making more decisions, faster, which felt like progress.", "size": 100},
+          {"name": "There were periods pre-launch, when we were still at Pivotal, when noone really understood what we were building, so just went ahead and did what we thought was right.  Not too much deliberating, didn't necessarily make the best decisions but allowed us to get into a groove/flow that's been hard to replicate.", "size": 100}
+        ]
+      },
+      { "name": "Communication",
+        "children": [
+          {"name": "There were more team meetings, progress meetings, demos, bringing everyone up to speed and aware of what's going on", "size": 100},
+          {"name": "Concenrated on smaller pieces", "size": 100},
+          {"name": "There was very strong leadership in meetings pre-launch. Everyone was always saying 'you can't call a meeting unless you have a clear objective'.", "size": 100},
+          {"name": "Everyone was really in sync. Everyday we would sit in the big conference room and go through a lis of everything that needed to be done.", "size": 100},
+          {"name": "People were utilized.", "size": 100},
+          {"name": "Lots of communication to users about what was coming (training sessions, demos, etc.)", "size": 100}
+        ]
+      }
+    ]
+  },
+  { "name": "Team",
+    "children": [
+      {"name": "Initiative",
+        "children": [
+          {"name": "People take responsibility for things they're unhappy with (Joe took a lead in making sure people came in for tech screens after uncubed, Mike F and Joe P leading the charge on improving the UX workflow)", "size": 100},
+          {"name": "Mike and Joe being involved in the Deal Room UI/UX prototyping.  People are allowed to explore things that may not be in their discipline/background.", "size": 100},
+          {"name": "You don't have to 'stay in your box'.  If you've got ideas or something to bring to the table, it's welcomed.", "size": 100}
+        ]
+    },
+    {"name": "Good People",
+      "children": [
+        {"name": "We're good at hiring people with good intentions", "size": 100},
+        {"name": "We've got very bright people.  We've hired for the right reasons (technical skill and team fit).  ", "size": 100},
+        {"name": "Everyone interviewing everyone else has led to us bringing people on board that benefit the team. We encourage 'the amoeba growing itself'", "size": 100}
+      ]
   }
-  ]
+ ]
+  },
+    {"name": "Dev Team",
+      "children": [
+        {"name": "We have developed an incredible tech team, stemming from the original decision to go with Pivotal and their recruiting paradigm.", "size": 100},
+        {"name": "The Dev team is very open to criticism, they're honest with each other and  a lot of mutual respect.  With a common skill set it's easier to bounce things off each other.", "size": 100},
+        {"name": "The devs go out and get drinks together fairly often, which goes a long way in fostering team unity.", "size": 100},
+        {"name": "We hire developers that are passionate about what they bulid and want to feel like they're a part of it.", "size": 100}
+      ]
+  },
+   {"name": "Culture",
+      "children": [
+        {"name": "Honesty/Integrity", 
+          "children": [
+            {"name": "High standards, problems we're having are an outgrowth of these high standards.", "size": 100},
+            {"name": "We know we can deliver a world class product", "size": 100},
+            {"name": "When there's a problem, we don't hesitate to call it out", "size": 100} 
+          ]
+      },
+        {"name": "Collaboration", 
+          "children": [
+            {"name": "We've done a great job of propagating a culture of 'everbody's in it together'", "size": 100},
+            {"name": "Everyone wants to teach and learn from eachother.", "size": 100}, 
+            {"name": "Completely collaborative and respectful.", "size": 100},
+            {"name": "There's a lot of mutual respect between teams.", "size": 100} 
+          ]
+      }
+    ]
+  },
+  {"name": "Customer Support",
+    "children": [
+      {"name": "Every item you're working on there, you're putting out a fire.  As our customers are complaining about things, we're actually fixing them.", "size": 100},
+      {"name": "We have a huge backlog of stories to work on but we try to keep the focus on the customers and respond to their concerns/issues.", "size": 100}, 
+      {"name": "We're in frequent communication with the customers. ExL If we can't immediately roll out a feature, we let them know 'this is in the works, we might be able to have this out next Friday'.", "size": 100}
+    ]
+  },
+  { "name": "Deal Room ACA Push",
+    "children": [
+      {"name": "Iterative Process",
+        "children": [
+          {"name": "Due to the time constraints, we stepped out of the process and collaborated more closely.", "size": 100},
+          {"name": "There was a smaller sub-team, there was a checklist, less overhead of managing multiple stories in tracker.", "size": 100},
+          {"name": "Iteratively mocking things up on the screen was more effective than waiting for final designs.  ", "size": 100},
+          {"name": "Lots of proto-typing and trying things out", "size": 100},
+          {"name": "Allowing people to proto-type, wireframe, and explore ideas.", "size": 100},
+          {"name": "Wouldn't have been able to deliver if not for quick prototyping, especially on Mike's part.", "size": 100},
+          {"name": "We got lean", "size": 100}
+        ]
+    },
+    {"name": "Speed",
+      "children": [
+        {"name": "We were able to turn around something that was broken very quickly, and do a really good job", "size": 100},
+        {"name": "We made a lot of improvements in a small amount of time, and we got a lot of positive feedback", "size": 100}
+      ]
+    },
+    {"name": "Ownership",
+      "children": [
+        {"name": "The deadline made it so we were forced to make decisions", "size": 100},
+        {"name": "Deadline allowed people to feel empowered to make decisions.", "size": 100},
+        {"name": "People took 'ownership' of the Deal Room, of the product, which is the exact culture you want to see at a startup, and somewhat different from the Pivotal, consultant-style culture.", "size": 100},
+        {"name": "Dev freedom to do more rapid proto-typing.", "size": 100},
+        {"name": "Spread project mgmt duties to multiple resources.", "size": 100},
+        {"name": "More ownership of the stories, less hand-holding", "size": 100}
+      ]
+    },
+    {"name": "As painful as it was, gave our customers the ability to actually use the product."}
+    ]
+  },
+   {"name": "David",
+      "children": [
+        {"name": "David really tries to lift the team up, very much positive re-enforcement.", "size": 100},
+        {"name": "David's lectures were great and helped morale as well.", "size": 100}
+      ]
+   },
+
+  {"name": "Customers",
+      "children": [
+        {"name": "Our customers want Gust to succeed. They're very loyal because of there's a personal quality to Gust for many of the users (via customer service/biz dev) that isn't found on other platforms.", "size": 100},
+        {"name": "We're perceived as being experts in the space.", "size": 100}
+      ]
+   },
+   {"name": "Collaboration",
+      "children": [
+        {"name": "You're perspective is challenged when working with members of other teams. You're pushed by developers to think more technically, pushed by designers to think more aesthetically, etc.", "size": 100},
+        {"name": "The stakes are higher when working together, you need to be able to articulate your thoughts well which is a good challenge.", "size": 100},
+        {"name": "'I usually end of working by myself, so it's great to get other people's input'", "size": 100},
+        {"name": "Collaboration makes it so departments are working together, rather than reacting to each other.", "size": 100}
+      ]
+   },
+  { "name": "Analytics Story",
+    "children": [
+      {"name": "Dev Collaboration",
+        "children": [
+          {"name": "A lot of collaboration with developers (Chien, Alex, Lee)", "size": 100},
+          {"name": "Developer collaboration was essential.  I knew the problems we faced and the goals we had, but didn't have the technical know-how to know what we should do about it.", "size": 100}
+        ]
+    },
+    {"name": "Reactive Problem-Solving",
+        "children": [
+          {"name": "Clear goal, no prescribed way to get there", "size": 100},
+          {"name": "The devs learned a lot about our problem, got a lot of context, and were able to creatively help with solutions instead of having it prescribed.", "size": 100}
+        ]
+    },
+    {"name": "It's rewarding working on something where the value to the overall goals at Gust is known" }
+    ]
+  },
+   {"name": "Nash",
+      "children": [
+        {"name": "Nash makes people feel empowered.", "size": 100},
+        {"name": "Nash's modern, collaborative, agile management style is very well suited to the kind of organization we are.", "size": 100},
+        {"name": "Leads from the front, self-starting", "size": 100}
+      ]
+  },
+   {"name": "Styleguide",
+      "children": [
+        {"name": "Standardizing names/definitions for the UI components we're implementing makes decisions about how/where to use them much easier.  Everytime I see this thing, I know what it should be.", "size": 100},
+        {"name": "The styleguide has given us a 'non-rotten foundation' to work forward from.", "size": 100},
+        {"name": "Using styles from the style-guide has allowed us to consolidate and eliminate a lot of the user-facing style fragementation.", "size": 100}
+      ]
+  },
+ {"name": "Sirocco",
+    "children": [
+      {"name": "Iterative",
+        "children": [
+          {"name": "Lots of prototyping", "size": 100},
+          {"name": "There was a small team involved that was working fluidly together.", "size": 100},
+          {"name": "Moved quickly an iteratively through the project.", "size": 100}
+        ]
+    },
+    {"name": "Clarity",
+      "children": [
+        {"name": "Clear and understood goals", "size": 100},
+        {"name": "We made decisions quickly.  There was already a lot of alignment from the well-executed inception, so people felt fairly empowered to make decisions.", "size": 100}
+      ]
+    },
+    {"name": "Design Process",
+      "children": [
+        {"name": "We were able to work off of Ward's live styleguide", "size": 100},
+        {"name": "Informal cross-disciplinary collaboration.", "size": 100},
+        {"name": "The designers knew how we worked and our process", "size": 100},
+        {"name": "Ward (design) set out to get ahead of us, eliminating any design bottleneck.  With the lead time, we were able to get feedback on designs and iterate on them without holding up development.", "size": 100}
+      ]
+    }
+    ]
+},
+ {"name": "Company Profile Story",
+    "children": [
+      {"name": "People in a Room",
+        "children": [
+          {"name": "Two devs in the room, with UI/UX, Neil, presented multiple designs and then could pick and choose from the different ones.", "size": 100},
+          {"name": "Everyone in a room for a few hours, putting stuff up on the wall, drawing on it.  Iterating together in realt-time.", "size": 100},
+          {"name": "5 people in the room, 'what i wanna see out of work'", "size": 100}
+        ]
+    },
+    {"name": "Lots of proto-typing, which is great.", "size": 100}
+    ]
+},
+    {"name": "Messaging Story",
+      "children": [
+        {"name": "There was a lot of dog-fooding, using the feature a lot, which allowed us to surface bugs quickly and iron out the experience.", "size": 100},
+        {"name": "Hard core internal testing", "size": 100},
+        {"name": "Lots of QA during development, which helped to speed up the process.", "size": 100}
+      ]
+    },
+
+    {"name": "RGR",
+      "children": [
+        {"name": "Self Directed",
+          "children": [
+            {"name": "Self-organized and self-directed.", "size": 100},
+            {"name": "Was somewhat informal and off the cuff.", "size": 100},
+            {"name": "There didn't need to be any check-ins with anyone other than the people that were working on it.", "size": 100}
+          ]
+      },
+      {"name": "Customer Input",
+        "children": [
+          {"name": "Wasn't just developer led. Justin was the customer, giving the goals without the solutions.", "size": 100},
+          {"name": "We understood what the user wanted.", "size": 100}
+
+
+        ]
+      }
+      ]
+    },
+    {"name": "Supercheckbox",
+      "children": [
+        {"name": "The need was clear and understood.", "size": 100},
+        {"name": "We referenced other implementations that made sense.", "size": 100},
+        {"name": "The code was in a good position to yield to what they wanted to do.", "size": 100}
+      ]
+    },
+    {"name": "Post Pivotal",
+      "children": [
+        {"name": "Culture/Ownership Shift",
+          "children": [
+            {"name": "We referenced other implementations that made sense.", "size": 100},
+            {"name": "The code was in a good position to yield to what they wanted to do.", "size": 100}
+          ]
+      }
+    ]
+    },
+    {"name": "UX Overhaul",
+      "children": [
+        {"name": "Got everyone interested (UX, devs, product) into a room to discuss what we wanted to do in the near term, but kept the overarching goals for users in mind.", "size": 100},
+        {"name": "The discussion was very honest in terms of where we were failing, which was much appreciated", "size": 100},
+        {"name": "The way we tackled patterns one by one, in the scope of larger issues, made a seemingly overwhelming task (fixing UX site-wide) manageable.", "size": 100}
+      ]
+    },
+    {"name": "Hiring",
+      "children": [
+        {"name": "When we're hiring for a position, it makes us get on the same page and clarify what we want out of those disciplines.  This has been good when hiring new UX people", "size": 100},
+        {"name": "Hiring encourages us to codify our processes", "size": 100},
+        {"name": "We hire talented, smart people that want to see the company succeed.", "size": 100}
+      ]
+    }
+]
 }
