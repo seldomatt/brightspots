@@ -1,6 +1,6 @@
 $(document).ready(function() {
   var margin = 20;
-  var diameter= 960;
+  var diameter= 1260;
 
   var color = d3.scale.linear()
   .domain([-1,5])
@@ -26,15 +26,13 @@ $(document).ready(function() {
     var nodes= pack.nodes(tree);
     var view;
 
-
-
     var circle= svg.selectAll("circle")
     .data(nodes)
     .enter()
     .append("circle")
     .attr("class", function(d){return setClass(d);})
     .style("fill",function(d){return d.children ? color(d.depth) : null;})
-    .on("mouseover", function(d){if (focus !== d) zoom(d), showCircles(d), wrap(d), d3.event.stopPropagation();})
+    .on("click", function(d){if (focus !== d) zoom(d), showCircles(d), d3.event.stopPropagation();})
     // .on("mouseover", function(d){ showCircles(d) } )
 
 
@@ -60,16 +58,16 @@ $(document).ready(function() {
       }
     }
 
-function showCircles(d) {
-  if (d.depth >= 1) {
-    $(".node--leaf").css( { 'fill': 'white', 'display': 'block' } )
-    $(".node--middle").css( { 'fill': 'blue', 'fill-opacity': '.5', 'display': 'block' } )
-  }
-  else {
-    $(".node--leaf").css("display", "none")
-  }
+    function showCircles(d) {
+      if (d.depth >= 1) {
+        $(".node--leaf").css( { 'fill': 'white', 'display': 'block' } )
+        $(".node--middle").css( { 'fill': 'blue', 'fill-opacity': '.5', 'display': 'block' } )
+      }
+      else {
+        $(".node--leaf").css("display", "none")
+      }
 
-}
+    }
 
 
     function inspectChildren(d) {
@@ -82,15 +80,18 @@ function showCircles(d) {
      }
     }
 
-    var text= svg.selectAll("text")
+
+    var text= svg.selectAll("foreignObject")
     .data(nodes)
-    .enter().append("text")
+    .enter().append("foreignObject")
+    .html(function(d){return d.name})
     .attr("class","label")
     .style("fill-opacity", function(d) {return d.parent === tree ? 1 :0; })
-    .style("display",function(d){return d.parent === tree ? null : "none";})
-    .text(function(d){return d.name;});
+    .style("display",function(d){return d.parent === tree ? null : "none";});
+    // .text(function(d){ return d.name; });
 
-    var node= svg.selectAll("circle,text")
+    var text_nodes= svg.selectAll(".label")
+    var circle_nodes= svg.selectAll("circle")
 
     d3.select("body")
     .style("background",color(-1))
@@ -109,7 +110,7 @@ function showCircles(d) {
         return function (t){zoomTo(i(t));};
       });
 
-      transition.selectAll("text")
+      transition.selectAll(".label")
       .filter(function(d){return d.parent ===focus || this.style.display === "inline";})
       .style("fill-opacity", function(d) {return d.parent === focus ? 1:0})
       .each("start",function(d){if (d.parent === focus) this.style.display = "inline";})
@@ -119,10 +120,13 @@ function showCircles(d) {
 
     function zoomTo(v){
       console.log(circle)
-      var k = diameter /v[2]; view =v
-      node.attr("transform", function (d){  return "translate(" + (d.x-v[0]) * k + "," + (d.y - v[1]) * k + ")" })
+      var k = diameter /v[2]; view =v;
+      circle_nodes.attr("transform", function (d){ return "translate(" + (d.x-v[0]) * k + "," + (d.y - v[1]) * k + ")" })
       circle.attr("r",function(d){return d.r *k});
-
+      text_nodes.attr("width", function(d) {return d.r *k *1.8});
+      text_nodes.attr("height", function(d) {return d.r *k *1.8});
+      text_nodes.attr("x", function(d) { return ((d.x-v[0]) * k) - (d.r *k) + 8 });
+      text_nodes.attr("y", function(d) { return (d.y - v[1]) * k });
     }
 
 
