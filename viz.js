@@ -22,7 +22,6 @@ $(document).ready(function() {
 
 
   d3.json("viz.json", function(error, tree){
-
     var focus = tree
     var nodes= pack.nodes(tree);
     var view;
@@ -35,7 +34,13 @@ $(document).ready(function() {
     .append("circle")
     .attr("class", function(d){return setClass(d);})
     .style("fill",function(d){return d.children ? color(d.depth) : null;})
-    .on("mouseover", function(d){if (focus !== d) zoom(d), d3.event.stopPropagation();})
+    .on("mouseover", function(d){if (focus !== d) zoom(d), showCircles(d), wrap(d), d3.event.stopPropagation();})
+    // .on("mouseover", function(d){ showCircles(d) } )
+
+
+    var text= svg.selectAll("text")
+
+
 
     function setClass(d) {
       if (d.parent) {
@@ -54,6 +59,18 @@ $(document).ready(function() {
         return "node node--root"
       }
     }
+
+function showCircles(d) {
+  if (d.depth >= 1) {
+    $(".node--leaf").css( { 'fill': 'white', 'display': 'block' } )
+    $(".node--middle").css( { 'fill': 'blue', 'fill-opacity': '.5', 'display': 'block' } )
+  }
+  else {
+    $(".node--leaf").css("display", "none")
+  }
+
+}
+
 
     function inspectChildren(d) {
      for(var i = 0; i < d.children.length; i++){
