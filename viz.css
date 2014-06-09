@@ -2,27 +2,20 @@
   cursor: pointer;
 }
 
-.node:hover {
-  stroke: #000;
-  stroke-width: 1.5px;
-}
-
-.node--top {
-  /* display: none; */
-}
-
 .node--middle {
   display: none;
 }
 
 .node--leaf {
   display: none;
+  fill:'#BDFCFF';
 }
 
 .label {
-  font: 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-anchor: middle;
-  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+  font: 1em "Helvetica Neue Bold", Helvetica, Arial, sans-serif;
+  color: #306468;
+  font-weight: bold;
+  /* text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff; */
 }
 
 .label,
@@ -30,3 +23,4 @@
 .node--leaf {
   pointer-events: none;
 }
+
