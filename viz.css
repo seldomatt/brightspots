@@ -24,3 +24,12 @@
   pointer-events: none;
 }
 
+circle:hover{
+  stroke: white;
+  stroke-width: 20px;
+}
+
+g{
+  margin: 0 auto;
+  display: block;
+}

@@ -1,6 +1,7 @@
 $(document).ready(function() {
-  var margin = 20;
-  var diameter= 1260;
+  var margin = 10;
+  var diameter= $(window).innerWidth()/2;
+  var svgWidth = $(window).innerWidth(); 
 
   var color = d3.scale.linear()
   .domain([-1,5])
@@ -9,10 +10,10 @@ $(document).ready(function() {
 
 
   var svg= d3.select("body").append("svg")
-  .attr("width",diameter)
+  .attr("width", svgWidth)
   .attr("height", diameter)
   .append("g")
-  .attr("transform", "translate(" + diameter /2 + ", " + diameter /2 + ")");
+  .attr("transform", "translate(" + diameter + ", " + diameter/2 + ")");
 
 
   var pack= d3.layout.pack()
@@ -90,8 +91,8 @@ $(document).ready(function() {
       transition.selectAll(".label")
       .filter(function(d){return d.parent ===focus || this.style.display === "inline";})
       .style("fill-opacity", function(d) {return d.parent === focus ? 1:0})
-      .each("start",function(d){if (d.parent === focus) this.style.display = "inline";})
-      .each("end",function(d){if (d.parent !== focus) this.style.display = "none";})
+      .each("start",function(d){if (d.parent === focus) this.style.display = "inline"; if (d.parent !== focus) this.style.display = "none"})
+      .each("end",function(d){if (d.parent !== focus) this.style.display = "none"; if (d.parent == focus) this.style.display = "inline"})
     }
 
     function zoom(d){
@@ -114,9 +115,8 @@ $(document).ready(function() {
 
       transition.selectAll(".label")
       .filter(function(d){return d.parent ===focus || this.style.display === "inline";})
-      .style("fill-opacity", function(d) {return d.parent === focus ? 1:0})
-      .each("start",function(d){if (d.parent === focus) this.style.display = "inline";})
-      .each("end",function(d){if (d.parent !== focus) this.style.display = "none";})
+      .each("start",function(d){if (d.parent === focus) this.style.display = "none"; if (d.parent !== focus) this.style.display = "none";})
+      .each("end",function(d){if (d.parent === focus) this.style.display = "inline"; if (d.parent !== focus) this.style.display = "none";})
     }
 
     function zoomTo(v){
@@ -128,6 +128,7 @@ $(document).ready(function() {
       text_nodes.attr("height", function(d) {return d.r *k *2});
       text_nodes.attr("x", function(d) { return ((d.x-v[0]) * k) - (d.r *k) });
       text_nodes.attr("y", function(d) { return ((d.y - v[1]) * k) -15});
+      text_nodes.attr("fill", "red");
     }
 
     d3.select(self.frameElement).style("height",diameter + "px");
